@@ -1,4 +1,4 @@
-# theme-frontend-base
+# Magento 2 Base theme based on luma.
 Magento 2 base theme
 
 Overview - 
