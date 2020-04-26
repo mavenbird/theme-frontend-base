@@ -1,0 +1,155 @@
+/* override parent styles(variables etc.) here... */
+@copyright__background-color: #000000;
+@primary-color: #5cb012;
+@primary-border-color: #5cb012;
+@primary-color-hover: #4ea006;
+@primary-border-color-hover: #4ea006;
+
+.page-header {
+    .logo {
+        float: right;
+        max-width: 180px;
+        margin-left: 0px;
+    }
+    .minicart-wrapper {
+        float: none;
+        display: inline-block;
+        vertical-align: middle;
+        margin: 2px 0px 0px 10px;
+        .action {
+            &.showcart {
+                &:before {
+                    font-size: 30px;
+                }
+                .counter-number {
+                    text-shadow: none;
+                }
+                .counter {
+                    &.qty {
+                        background: @primary-color;
+                        min-width: 24px;
+                        position: absolute;
+                        top: -8px;
+                        right: -16px;
+                        margin: 0px;
+                        font-size: 13px;
+                        border-radius: 100%;
+                        padding: 0px;
+                    }
+                }
+            }
+            &.close {
+                &:before {
+                    font-size: 26px;
+                }
+            }
+        }
+        .block-minicart {
+            right: auto;
+            left: 0px;
+            &:before {
+                right: auto;
+                left: 12px;
+            }
+            &:after {
+                right: auto;
+                left: 11px;
+            }
+        }
+    }
+    .block-search {
+        padding-left: 0px;
+        float: left;
+    }
+}
+
+.action {
+    &.primary {
+        &.tocart {
+        	border-radius: 5px;
+        	background: @primary-color;
+	        border: 1px solid @primary-color;
+	        &:focus, 
+	        &:active, 
+	        &:hover {
+	            background: @primary-color-hover;
+	            border: 1px solid @primary-color-hover;
+	        }
+        }
+    }
+}
+.product-item-actions {
+    .actions-secondary {
+        > .action {
+            &:before {
+                font-size: 28px;
+                width: 24px;
+            }
+        }
+    }
+}
+
+@screen-sm-min: ~'(min-width:768px)';
+@tablet-down: ~'(max-width:767px)';
+@mobile-down: ~'(max-width:479px)';
+@media @screen-sm-min {
+    .logo {
+        img {
+            max-height: none;
+            width: 170px;
+            height: auto;
+        }
+    }
+}
+@media @tablet-down {
+    .block-search {
+        position: relative;
+        .control {
+            margin: 0px;
+            border-top: 0px;
+        }
+        .label {
+            &.active {
+                + .control {
+                    input {
+                        position: absolute;
+                        left: 0px;
+                        right: auto;
+                        width: auto;
+                        box-shadow: none;
+                        border: 1px solid #ddd;
+                    }
+                }
+            }
+        }
+    }
+    .page-header {
+        .block-search {
+            margin: 11px 0px 0px 40px;
+        }
+        .minicart-wrapper {
+            margin: 11px 0px 0px 4px;
+        }
+    }
+}
+@media @mobile-down {
+    .page-header {
+        .logo {
+            max-width: 140px;
+        }
+        .minicart-wrapper {
+            .block-minicart {
+                padding: 15px 12px;
+                left: -75px;
+                &:before {
+                    right: auto;
+                    left: 85px;
+                }
+                &:after {
+                    right: auto;
+                    left: 84px;
+                }
+            }
+        }
+    }
+}
