@@ -5,10 +5,10 @@ Overview -
 ------------
 This theme is mavenbird/base theme for Magento 2 based on luma.
 
-Features-
-1. Add to cart button color set to Green
-2. Logo moved right side and Search,minicart moved to left
-3. Alert "This is just a test." message on submission of newsletter on footer.
+### Features-
+* 1. Add to cart button color set to Green
+* 2. Logo moved right side and Search,minicart moved to left
+* 3. Alert "This is just a test." message on submission of newsletter on footer.
 
 Installation - 
 ------------
