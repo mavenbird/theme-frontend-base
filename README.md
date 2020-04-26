@@ -2,6 +2,7 @@
 Magento 2 base theme
 
 Overview - 
+------------
 This theme is mavenbird/base theme for Magento 2 based on luma.
 
 Features-
@@ -10,6 +11,7 @@ Features-
 3. Alert "This is just a test." message on submission of newsletter on footer.
 
 Installation - 
+------------
 1. Using Composer
 ```
 composer config repositories.mavenbirdbasetheme git git@github.com:mavenbird/theme-frontend-base 
@@ -26,7 +28,7 @@ Then you should run Magento's setup upgrade:
 ```
 php bin/magento setup:upgrade
 ```
-Now you activate the Mavenbird/base Theme under Content -> Design -> Configuration..
+Now you activate the Mavenbird/base Theme under `Content -> Design -> Configuration..`
 
 Lastly clear Magento generated suff and caches:
 ```
