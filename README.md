@@ -12,15 +12,15 @@ Features-
 
 Installation - 
 ------------
-1. Using Composer
+### 1. Using Composer
 ```
 composer config repositories.mavenbirdbasetheme git git@github.com:mavenbird/theme-frontend-base 
 composer require mavenbird/theme-frontend-base:dev-master
 ```
-2. Using Zip File
+### 2. Using Zip File
 
-Download the Extension Zip File
-Extract & upload the files to /path/to/magento2/app/design/frontend/Mavenbird/base/
+* Download the Extension Zip File
+* Extract & upload the files to /path/to/magento2/app/design/frontend/Mavenbird/base/
 
 After installation by either means, enable the extension by running following commands (from root of Magento2 installation):
 
